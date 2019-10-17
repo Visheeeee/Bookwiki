@@ -128,11 +128,14 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
         color:indianred;
         text-align:right;
     }
-.Sell{ color:indianred; text-align:center; }
+.Sell{ color:indianred; text-align:center; border-right: solid 1px #f00; }
 .links{
         color:beige; text-align:right;
         }	
 .hb { color:beige; display:inline;}
 
+table { border-collapse:collapse; }
+tr { border:none; }
+.col1 { border-right: solid 1px #f00; }
 
-<!-- img.Bookimg {  -->
+/* <!-- img.Bookimg {  --> */
