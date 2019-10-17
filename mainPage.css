@@ -133,11 +133,6 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
         color:beige; text-align:right;
         }	
 .hb { color:beige; display:inline;}
-table { border-collapse:collapse; }
-		tr { border:none; }
-		td,th {
-		border-right: solid 1px #f00; 
-		<!-- border-left: solid 1px #f00; -->
-		}
+
 
 <!-- img.Bookimg {  -->
