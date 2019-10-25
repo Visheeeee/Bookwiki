@@ -2,20 +2,25 @@
 <head>
 	<title>Bookwiki</title>
 	<link rel="stylesheet" type="text/css" href="mainPage.css">
+	<style>
+		.container img { width:1380; height:200;}
+	</style>
 </head>
 <body>
 	<h1 class="Websitename">Bookwiki</h1>
 	<div class="container">
-		<img src="Banner.jpg" alt="Book image" >
+		<img src="Books4.jpg" alt="Book image" id="bkgd">
 		<a href="/Genre/genreMain.html"> <button class="Genre">Genre</button> </a>
 		<a href="/Genre/biographyGenre.html"> <button class="Biography">Biography</button> </a>
 		<a href="/Genre/FictionGenre.html"> <button class="Fiction">Fiction</button> </a>
 		<a href="/Genre/romanceGenre.html"> <button class="Romance">Romance</button> </a>
 		<a href="/Genre/horrorGenre.html"> <button class="Horror">Horror</button> </a>
 		<a href="/Genre/mysteryGenre.html"> <button class="Mystery">Mystery</button> </a>
-
-		<button class="Search">Search</button>
-		<input type="text" class="Searchbox" size="20" maxlength="20" >
+		
+		<form method="post" action="search.php">
+			<input type="text" class="Searchbox" size="20" maxlength="100" name="s" value="">
+			<input type="submit" class="Search" value="Search">
+		</form>
 	</div>
 	
 	<table class="Table">

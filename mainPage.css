@@ -10,8 +10,8 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     margin-left: -3px;
     top: 0; */
     }
-.container img {
-    width: 1920;
+.container .img {
+    width: 1500;
     height: 200;
         }
 .container .Genre {

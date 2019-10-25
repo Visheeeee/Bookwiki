@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Login Form</title>	
+	<link rel="stylesheet" type="text/css" href="mainPage.css">
+	<style>
+		.un, .pw{
+			font-size: 16px;
+			padding: 12px 24px;
+			border: none;
+			cursor: text;
+			border-radius: 5px;}
+		.container img { width:1380; height:200;}
+	</style>
+</head>
+<body>
+	<h1 class="Websitename">Bookwiki</h1>
+	<div class="container">
+		<img src="Books4.jpg" alt="Book image" id="bkgd">
+		<a href="/Genre/genreMain.html"> <button class="Genre">Genre</button> </a>
+		<a href="/Genre/biographyGenre.html"> <button class="Biography">Biography</button> </a>
+		<a href="/Genre/FictionGenre.html"> <button class="Fiction">Fiction</button> </a>
+		<a href="/Genre/romanceGenre.html"> <button class="Romance">Romance</button> </a>
+		<a href="/Genre/horrorGenre.html"> <button class="Horror">Horror</button> </a>
+		<a href="/Genre/mysteryGenre.html"> <button class="Mystery">Mystery</button> </a>
+
+		<form method="post" action="search.php">
+			<input type="text" class="Searchbox" size="20" maxlength="100" name="s" value="">
+			<input type="submit" class="Search" value="Search">
+		</form>
+	</div>
+
+	<h1 style="color:steelblue">Login</h1>
+    <form method="post" action="checkrequest.php" >
+        Username <input type="text" name="usname" class="un"><br /><br />
+		Password <input type="password" name="pass" class="pw"><br /><br />
+		<input type="submit" value="GO"/ style="background-color: slategray;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;">
+		<input type="reset" style="    background-color: slategray;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;"/>
+    </form>
+</body>
+</html>
