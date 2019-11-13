@@ -1,8 +1,9 @@
 body { background-color:burlywood;} 
 h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=100pt;} 
 .container {
-    position: relative;
+    position:relative;
     width: 50%;
+    border: none;
     /* border-left: 6px solid green;
     height: 500px;
     position: absolute;
@@ -14,7 +15,7 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     width: 1920;
     height: 200;
         }
-.container .Genre {
+.container .Genre ,.Biography, .Fiction, .Romance, .Horror, .Mystery, .Search {
     position: absolute;
     top: 15%;
     left: 7%;
@@ -28,7 +29,10 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     cursor: pointer;
     border-radius: 5px;
         }
-.container .Biography {
+.container .Genre{
+    left: 7%;
+}
+/* .container .Biography {
     position: absolute;
     top: 15%;
     left: 20%;
@@ -41,8 +45,11 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     border: none;
     cursor: pointer;
     border-radius: 5px;
-        }
-.container .Fiction {
+        } */
+.container .Biography{
+    left:20%;
+}
+/* .container .Fiction {
     position: absolute;
     top: 15%;
     left: 33%;
@@ -55,8 +62,11 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     border: none;
     cursor: pointer;
     border-radius: 5px;
-        }
-.container .Romance {
+        } */
+.container .Fiction{
+    left:33%;
+}
+/* .container .Romance {
     position: absolute;
     top: 15%;
     left: 46%;
@@ -69,8 +79,11 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     border: none;
     cursor: pointer;
     border-radius: 5px;
-        }
-.container .Horror {
+        } */
+.container .Romance{
+    left:46%;
+}
+/* .container .Horror {
     position: absolute;
     top: 15%;
     left: 59%;
@@ -83,8 +96,11 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     border: none;
     cursor: pointer;
     border-radius: 5px;
-        }
-.container .Mystery {
+        } */
+.container .Horror{
+    left:59%;
+}
+/* .container .Mystery {
     position: absolute;
     top: 15%;
     left: 72%;
@@ -97,8 +113,11 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     border: none;
     cursor: pointer;
     border-radius: 5px;
-        }
-.container .Search {
+        } */
+.container .Mystery{
+    left:72%;
+}
+/* .container .Search {
     position: absolute;
     top: 15%;
     left: 190%;
@@ -111,7 +130,11 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     border: none;
     cursor: pointer;
     border-radius: 5px;
-        }
+        } */
+.container .Search{
+    background-color: darkgray;
+    left:190%;
+}
 .container .Searchbox{
     position: absolute;
     top: 15%;
@@ -124,18 +147,15 @@ h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=1
     cursor: text;
     border-radius: 5px;
 }
-.News { 
+/* .News { 
         color:indianred;
         text-align:right;
     }
 .Sell{ color:indianred; text-align:center; border-right: solid 1px #f00; }
 .links{
-        color:beige; text-align:right;
-        }	
+        color:beige; text-align:center;
+        }	 */
 .hb { color:beige; display:inline;}
 
-table { border-collapse:collapse; }
-tr { border:none; }
-.col1 { border-right: solid 1px #f00; }
 
-/* <!-- img.Bookimg {  --> */
+
