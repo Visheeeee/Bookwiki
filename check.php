@@ -19,10 +19,10 @@
 		//echo "isset";
 	}
 	$query=mysqli_query($conn,"SELECT * FROM nametable where username='$firstname' and password='$lastname'");
-	if(mysqli_num_rows($query)==1)
+	if(mysqli_num_rows($query)==1)//query is passed as argument and the function returns the number of rows which satisfy the query.
 	{
 		echo "Existing user";
-		header("Location:mainPage.html");
+		header("Location:mainPage.php");//Redirection to mainPage.php
 	}
 	else{
 		echo "Incorrect username or password.";

@@ -1,4 +1,5 @@
 <?php
+	//same as check.php except that here it redirects to request.html to place requests for new books
 	$servername = "localhost";
 	$username = "root";
 	$password = "";

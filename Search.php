@@ -7,28 +7,27 @@
 	</style>
 </head>
 <body>
-	<h1 class="Websitename">Bookwiki</h1>
+	<a href="mainPage.html"><h1 class="Websitename">Bookwiki</h1></a>
 	<div class="container">
 		<img src="Books4.jpg" alt="Book image" id="bkgd">
-		<a href="/Genre/genreMain.html"> <button class="Genre">Genre</button> </a>
-		<a href="/Genre/biographyGenre.html"> <button class="Biography">Biography</button> </a>
-		<a href="/Genre/FictionGenre.html"> <button class="Fiction">Fiction</button> </a>
-		<a href="/Genre/romanceGenre.html"> <button class="Romance">Romance</button> </a>
-		<a href="/Genre/horrorGenre.html"> <button class="Horror">Horror</button> </a>
-		<a href="/Genre/mysteryGenre.html"> <button class="Mystery">Mystery</button> </a>
+		<a href="Genre/genreMain.html"> <button class="Genre">Genre</button> </a>
+		<a href="Fantasy.php"> <button class="Biography">Biography</button> </a>
+		<a href="Genre/FictionGenre.html"> <button class="Fiction">Fiction</button> </a>
+		<a href="Genre/romanceGenre.html"> <button class="Romance">Romance</button> </a>
+		<a href="Genre/horrorGenre.html"> <button class="Horror">Horror</button> </a>
+		<a href="Genre/mysteryGenre.html"> <button class="Mystery">Mystery</button> </a>
 		
 		<form method="post" action="search.php">
-			<input type="text" class="Searchbox" size="20" maxlength="100" name="s" value="">
+			<input type="text" class="Searchbox" size="20" maxlength="100" placeholder="Search for a book" name="s" value="">
 			<input type="submit" class="Search" value="Search">
 		</form>
+		
+		<a href="Signup.html"><button class="su">Sign up</button></a>
+		<a href="Login.html"><button class="li">Login</button></a>
 	</div>
 	
-	<table border="1">
-		<tr>
-			<th>Book name</th>
-			<th>Author name</th>
-			<th>Published on</th>
-		</tr>
+	<table border="0" align="center">
+		
 <?php
 
 	$servername = "localhost";
@@ -43,9 +42,21 @@
 		die("Connection failed:"+mysqli_connect_error());
 	}
 	
-	$Bname=$_POST['s'];
-	//echo "$Bname";
-	$query="SELECT * FROM AllBooks where Bookname='$Bname'";
+	$Bookname=$_POST['s'];
+	echo "Searched for:$Bookname";
+/* 	$sql="SELECT Bname,Aname,Publisher,Year,Genre FROM AllBooks where Bname LIKE '%$Bookname%'";
+	$query=mysqli_query($conn,$sql);
+	
+	if($query) {
+    while($row = mysqli_fetch_assoc($query)){
+		echo "<tr><td>",$row['Bname'],"</td><td>",$row['Aname'],"</td><td>",$row['Publisher'],"</td><td>",$row['Year'],"</td><td>",$row['Genre'],"</td></tr>";
+    }
+	else
+	{
+		echo "No results.";
+	}  */
+	
+	$query="SELECT Bname,Aname,Publisher,Year,Genre FROM AllBooks where Bname LIKE '%$Bookname%'";
 
 	$result=$conn->query($query);
 	
@@ -53,13 +64,21 @@
 	{
 		while($row=$result->fetch_assoc())
 		{
-				echo "<tr><td>",$row['Bookname'],"</td><td>",$row['Authorname'],"</td><td>",$row['Publishedon'],"</td></tr>";
+				$name=$row['Bname'];
+				/* $name1=$row['Bname']; */
+				$name1=str_replace("'","",$name);//In order to not having conflicting single and double quotes in the echo statements, We're removing all single quotes for simplicity.
+				//echo "<tr><td><a href='$name.html'>",$row['Bname'],"</a></td><td>",$row['Aname'],"</td><td>",$row['Publisher'],"</td><td>",$row['Year'],"</td><td>",$row['Genre'],"</td></tr>";
+				echo "<tr><td align:'center'><a href='BestSellingBooks/$name1.html'><img src='BestSellingBooks/$name1.jpg' style='width:150px; height:200px'/></a></td>";
+				//echo "<tr><td><a href='BestSellingBooks/$name.html'><img src='BestSellingBooks/Harry Potter and the Sorcerer's Stone.jpg' /></a></td><br />";
+				echo "<td><a href='BestSellingBooks/$name1.html'>",$row['Bname'],"</a><br />",$row['Aname'],"<br />",$row['Genre'],"</td></tr>";
 		}
 	}
 	else
 	{
 		echo "No results.";
 	}
+	
+	mysqli_close($conn);
 
 ?>
 	</table>

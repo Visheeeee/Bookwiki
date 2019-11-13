@@ -1,1 +1,173 @@
+body { background-color:burlywood;} 
+h1.Websitename {color:black; text-align:center; font-family:fantasy; font-size=100pt;} 
+.container {
+    position: relative;
+    width: 50%;
+    /* border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 60%;
+    margin-left: -3px;
+    top: 0; */
+    }
+.container .img {
+    width: 1500;
+    height: 200;
+        }
+.container .Genre {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Biography {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Fiction {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Romance {
+    position: absolute;
+    top: 15%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Horror {
+    position: absolute;
+    top: 15%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Mystery {
+    position: absolute;
+    top: 15%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Search {
+    position: absolute;
+    top: 15%;
+    left: 190%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: darkgrey;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+.container .Searchbox{
+    position: absolute;
+    top: 15%;
+    left: 165%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: text;
+    border-radius: 5px;
+}
 
+.container .su {
+    position: absolute;
+    top: 75%;
+    left: 190%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: darkgrey;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+    
+.container .li {
+    position: absolute;
+    top: 75%;
+    left: 175%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: darkgrey;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+        }
+        
+
+.News { 
+        color:indianred;
+        text-align:right;
+    }
+.Sell{ color:indianred; text-align:center; border-right: solid 1px #f00; }
+.links{
+        color:beige; text-align:right;
+        }	
+.hb { color:beige; display:inline;}
+
+table { border-collapse:collapse; }
+tr { border:none; }
+.col1 { border-right: solid 1px #f00; }
+
+/* <!-- img.Bookimg {  --> */

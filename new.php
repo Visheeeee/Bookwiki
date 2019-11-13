@@ -3,27 +3,27 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$dbname = "sample";
-	// Create connection
+	$dbname = "sample";//Database name
+	// Create connection with server
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
 	// Check connection
-	if ($conn) {
-		echo "Connected!!<br />";
-		//die("Connection failed: " . mysqli_connect_error());
+	if (!$conn) {
+		//echo "Connected!!<br />";
+		die("Connection failed: " . mysqli_connect_error());
 	}
 	
-	
-	$sql="INSERT INTO nametable (username, password)
+	//query
+	$sql="INSERT INTO nametable (Firstname,Lastname,EmailID,Username,Password)
 	VALUES
-	('$_POST[usname]','$_POST[pass]')";
+	('$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[usname]','$_POST[pass]')";
 	
-	if (mysqli_query($conn,$sql))
+	if (mysqli_query($conn,$sql))//checks if the query worked properly on the table 
 	{
 		echo "Data inserted.";
 		header("Location:Login.html");
-		//die('Error: ' . mysql_error());
+		//die('Error: ' . mysqli_error());
 	}
-	echo "1 record added";
+	echo "Error.";
 	
 	/*$sql = "CREATE TABLE student_details 
 	(student_name VARCHAR(30),
@@ -41,5 +41,5 @@
 		echo "Error deleting record: " . $conn->error;
 	}*/
 
-	mysqli_close($conn);
+	mysqli_close($conn);//destroy connection
 ?>
