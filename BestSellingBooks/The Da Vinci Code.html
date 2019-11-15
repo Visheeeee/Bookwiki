@@ -1,89 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Book Page</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    </head>
-        <body>
-            <nav class="navbar navbar-default">
-                    <div class="container-fluid">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Da Vinci Code</title>
+	<link rel="shortcut icon" type="images/x-icon" href="../images/icon.png" />
+	<link href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="../mainPage.html"><img src="../images/icon.png" style="height:30px;width:40px"> BookWiki</a> 
+	
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			<a class="nav-link" href="../genre.html">Genre</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="../request.html">Request</a>
+			</li>
+		</ul>
+		<form method="post" action="../search.php" class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	
+		<ul class="navbar-nav my-2 my-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="../login.html">Login</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../signup.html">Sign Up</a>
+			</li>
+		</ul>
+	</nav>
 
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/WT/mainPage.html">BookWiki</a>
-                    </div>
-                
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                        <li class="active"><a href="mainPage.html">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genre <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Biographies</a></li>
-                            <li><a href="#">Thriller</a></li>
-                            <li><a href="#">Romance</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                        <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
+  <div class="container-fluid bookInfo">
+      <h1>The Da Vinci Code</h1>
+      <div class="row"> 
+        <img src="The Da Vinci Code.jpg" style="height:600px;width:300px" class="col-3"> 
+        <div class="container">
+            <h3 class="col-9">Author: Dan Brown</h3>
+            <h4 class="col-9">Publisher: Transworld & Bantam Books</h4>
+            <h5 class="col-9">Genre:Thriller</h5>
+            <h6 class="col-9">Year of release: 2003</h6>
+            <p class="col-9">An ingenious code hidden in the works of Leonardo da Vinci.
+                A desperate race through the cathedrals and castles of Europe.
+                An astonishing truth concealed for centuries . . . unveiled at last.
+                While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the dead of the night. The elderly curator of the Louvre has been murdered inside the museum, his body covered in baffling symbols. As Langdon and gifted French cryptologist Sophie Neveu sort through the bizarre riddles, they are stunned to discover a trail of clues hidden in the works of Leonardo da Vinci—clues visible for all to see and yet ingeniously disguised by the painter.
+                Even more startling, the late curator was involved in the Priory of Sion—a secret society whose members included Sir Isaac Newton, Victor Hugo, and Da Vinci—and he guarded a breathtaking historical secret. Unless Langdon and Neveu can decipher the labyrinthine puzzle—while avoiding the faceless adversary who shadows their every move—the explosive, ancient truth will be lost forever.</p>  
+        </div>
+      </div>
+  </div>
+  <hr>
 
-                <hr>
-
-                <div class="container-fluid">
-                    <h1>The Da Vinci Code</h1>
-                    <div class="row"> 
-                        <img src="The Da Vinci Code.jpg" style="height:400px;width:300px" class="col-md-4">
-                        <h3 class="col-md-8">Author: Dan Brown</h3>
-                        <h5 class="col-md-8">Publisher: Transworld & Bantam Books</h5>
-                        <h5 class="col-md-8">Year of release: 2003</h5>
-                        <h5 class="col-md-8">Genre:Thriller</h5>
-                        <p class="col-md-8">An ingenious code hidden in the works of Leonardo da Vinci.
-                                A desperate race through the cathedrals and castles of Europe.
-                                An astonishing truth concealed for centuries . . . unveiled at last.
-                                While in Paris, Harvard symbologist Robert Langdon is awakened by a phone call in the dead of the night. The elderly curator of the Louvre has been murdered inside the museum, his body covered in baffling symbols. As Langdon and gifted French cryptologist Sophie Neveu sort through the bizarre riddles, they are stunned to discover a trail of clues hidden in the works of Leonardo da Vinci—clues visible for all to see and yet ingeniously disguised by the painter.
-                                Even more startling, the late curator was involved in the Priory of Sion—a secret society whose members included Sir Isaac Newton, Victor Hugo, and Da Vinci—and he guarded a breathtaking historical secret. Unless Langdon and Neveu can decipher the labyrinthine puzzle—while avoiding the faceless adversary who shadows their every move—the explosive, ancient truth will be lost forever.</p>  
-
-                    </div>
-                </div>
-
-            <hr>
-
-            <blockquote class="blockquote-reverse">
-                    <p>Stay hungry, Stay foolish</p>
-                    <footer>Steve Jobs</footer>
-            </blockquote>
-
-            </body>         
-</html> 
+  </blockquote>
+  <blockquote class=" Quotes blockquote text-right">
+      <p class="mb-0">Stay hungry, Stay foolish</p>
+      <footer class="blockquote-footer"><cite title="Steve Jobs">Steve Jobs</cite></footer>
+  </blockquote>
+</body>         
+</html>                      

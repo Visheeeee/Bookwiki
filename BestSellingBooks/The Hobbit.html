@@ -1,86 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Book Page</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    </head>
-        <body>
-            <nav class="navbar navbar-default">
-                    <div class="container-fluid">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Hobbit</title>
+	<link rel="shortcut icon" type="images/x-icon" href="../images/icon.png" />
+	<link href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="../mainPage.html"><img src="../images/icon.png" style="height:30px;width:40px"> BookWiki</a> 
+	
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			<a class="nav-link" href="../genre.html">Genre</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="../request.html">Request</a>
+			</li>
+		</ul>
+		<form method="post" action="../search.php" class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	
+		<ul class="navbar-nav my-2 my-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="../login.html">Login</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../signup.html">Sign Up</a>
+			</li>
+		</ul>
+	</nav>
 
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/WT/mainPage.html">BookWiki</a>
-                    </div>
-                
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                        <li class="active"><a href="mainPage.html">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genre <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Biographies</a></li>
-                            <li><a href="#">Thriller</a></li>
-                            <li><a href="#">Romance</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                        <form class="navbar-form navbar-left">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
+  <div class="container-fluid bookInfo">
+      <h1>The Hobbit</h1>
+      <div class="row"> 
+        <img src="The Hobbit.jpg" style="height:600px;width:300px" class="col-3"> 
+        <div class="container">
+            <h3 class="col-9">Author: J.R.R. Tolkien</h3>
+            <h4 class="col-9">Publisher: George Allen & Unwin</h4>
+            <h5 class="col-9">Genre:Fantasy</h5>
+            <h6 class="col-9">Year of release: 1937</h6>
+            <p class="col-9">Smaug certainly looked fast asleep, when Bilbo peeped once more from the entrance. He was just about to step out onto the floor when he caught a sudden thin ray of red from under the drooping lid of Smaug's left eye. He was only pretending to be sleep! He was watching the tunnel entrance!
+                Whisked from his comfortable hobbit-hole by Gandalf the wizard and a band of dwarves, Bilbo Baggins finds himself caught up in a plot to raid the treasure hoard of Smaug the Magnificent, a large and very dangerous dragon.</p>  
+        </div>
+      </div>
+  </div>
+  <hr>
 
-                <hr>
-
-                <div class="container-fluid">
-                    <h1>The Hobbit</h1>
-                    <div class="row"> 
-                        <img src="The Hobbit.jpg" style="height:400px;width:300px" class="col-md-4">
-                        <h3 class="col-md-8">Author: J.R.R. Tolkien</h3>
-                        <h5 class="col-md-8">Publisher: George Allen & Unwin</h5>
-                        <h5 class="col-md-8">Year of release: 1937</h5>
-                        <h5 class="col-md-8">Genre:Fantasy</h5>
-                        <p class="col-md-8">Smaug certainly looked fast asleep, when Bilbo peeped once more from the entrance. He was just about to step out onto the floor when he caught a sudden thin ray of red from under the drooping lid of Smaug's left eye. He was only pretending to be sleep! He was watching the tunnel entrance!
-                                Whisked from his comfortable hobbit-hole by Gandalf the wizard and a band of dwarves, Bilbo Baggins finds himself caught up in a plot to raid the treasure hoard of Smaug the Magnificent, a large and very dangerous dragon.</p>  
-
-                    </div>
-                </div>
-
-            <hr>
-
-            <blockquote class="blockquote-reverse">
-                    <p>Stay hungry, Stay foolish</p>
-                    <footer>Steve Jobs</footer>
-            </blockquote>
-
-            </body>         
-</html> 
+  </blockquote>
+  <blockquote class=" Quotes blockquote text-right">
+      <p class="mb-0">Stay hungry, Stay foolish</p>
+      <footer class="blockquote-footer"><cite title="Steve Jobs">Steve Jobs</cite></footer>
+  </blockquote>
+</body>         
+</html>                      
