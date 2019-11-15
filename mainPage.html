@@ -1,23 +1,39 @@
 <html>
 <head>
 	<title>Bookwiki</title>
-	<link rel="stylesheet" type="text/css" href="mainPage.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="mp.css" rel="stylesheet">
 </head>
 <body>
-	<h1 class="Websitename">Bookwiki</h1>
-	<div class="container">
-		<img style="width:200%" src="books.jpg" alt="Book image" >
-		<a href="/Genre/genreMain.html"> <button class="Genre">Genre</button> </a>
-		<a href="/Genre/biographyGenre.html"> <button class="Biography">Biography</button> </a>
-		<a href="/Genre/FictionGenre.html"> <button class="Fiction">Fiction</button> </a>
-		<a href="/Genre/romanceGenre.html"> <button class="Romance">Romance</button> </a>
-		<a href="/Genre/horrorGenre.html"> <button class="Horror">Horror</button> </a>
-		<a href="/Genre/mysteryGenre.html"> <button class="Mystery">Mystery</button> </a>
+	<ul id="contextMenu">
+		<li class="menuItems" id="1" onclick="bg()">change bg</li>
+		<li class="menuItems" id="2">Sign Out</li>
+		<li class="menuItems" id="3">Reload</li>
+		<li class="menuItems" id="4">Print</li>
+		<li class="menuItems" id="5">Inspect</li>
+	</ul>
+	<h1 class="page-header">Bookwiki</h1>
+	<div class="slideshow-container">
 
-		<button class="Search">Search</button>
-		<input type="text" class="Searchbox" size="20" maxlength="20" >
+		<div class="mySlides fade">
+		  <img src="books.jpg" style="width:1480px; height:500px;">
+		  <div class="text">Caption Text</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <img src="Books4.jpg" style="width:1480px; height:500px;">
+		  <div class="text">Caption Two</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
-	<section class="sec1">
+	<br>
+	<div style="text-align:center">
+  	<span class="dot" onclick="currentSlide(1)"></span> 
+  	<span class="dot" onclick="currentSlide(2)"></span>  
+	</div>
+	<div class="container">
+	<section class="sec1 col-md-8">
 		<section class="s1">
 			<section class="s2">
 				<h3 class="h">Best Selling books</h3>
@@ -28,7 +44,7 @@
 					<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 5</pre></p></a>
 			</section>
 			<section class="s21">
-				<h3 class="h">hot selling books</h3>
+				<h3 class="h">Hot selling books</h3>
 					<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 1</pre></p></a>
 					<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 2</pre></p></a>
 					<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 3</pre></p></a>
@@ -36,10 +52,8 @@
 					<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 5</pre></p></a>
 			</section>
 		</section>
-		<!-- <section class="s2">
 
-		</section> -->
-		<section class="s3">
+		<section class="s3 col-md-4">
 			<h3 id="sp1">Announcements/news</h3>
 			<a href="" class="links"><p class="article">This is news article number 1</p></a>
 			<a href="" class="links"><p class="article">This is news article number 2</p></a>
@@ -47,51 +61,14 @@
 			<a href="" class="links"><p class="article">This is news article number 4</p></a>
 		</section>
 	</section>
-	<!-- <table>
-		<col width="1500">
-		<col width="500">
-		<tr>
-			<th class="Sell">Hot selling books</th>
-			<th class="
-			">Announcements/News</th>
-		</tr>
-		<tr>
-			<td>
-				<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 1</pre></p></a>
-				<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 2</pre></p></a>
-				<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 3</pre></p></a>
-				<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 4</pre></p></a>
-				<a href="" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 5</pre></p></a>
-			</td>
-			<td>
-				<a href="" class="links"><p class="article">This is news article number 1</p></a>
-				<a href="" class="links"><p class="article">This is news article number 2</p></a>
-				<a href="" class="links"><p class="article">This is news article number 3</p></a>
-				<a href="" class="links"><p class="article">This is news article number 4</p></a>
-			</td>
-		</tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr></tr>
-		<tr>
-			<th class="Sell">Bestselling books</th>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://www.google.com/" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 1</pre></p></a>
-				<a href="https://www.google.com/" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 2</pre></p></a>
-				<a href="https://www.google.com/" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 3</pre></p></a>
-				<a href="https://www.google.com/" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 4</pre></p></a>
-				<a href="https://www.google.com/" class="hb" style="display:inline; text-align:center;"><p class=""><pre>This is the book ranked number 5</pre></p></a>
-			</td>
-		</tr>
-	</table> -->
+		</div>
+
+	<blockquote class="blockquote-reverse">
+		<p>Float like a butterfly, sting like a bee.</p>
+		<footer> Quote by <cite title="Muhammad Ali"> Muhammad Ali</cite></footer>
+	</blockquote>
+	<script src="mainPage.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </body>
 </html>
