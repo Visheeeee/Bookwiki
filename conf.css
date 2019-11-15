@@ -1,0 +1,16 @@
+.requestBook {
+    margin:2px;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: text;
+    border-radius: 5px;}
+
+.actionButton {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 4px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;">
+}

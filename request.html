@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" type="images/x-icon" href="images/icon.png" />
+	<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="conf.css" rel="stylesheet">
+	<title>Request</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="mainPage.html"><img src="images/icon.png" style="height:30px;width:40px"> BookWiki</a>
+	
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			<a class="nav-link" href="genre.html">Genre</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="request.html">Request</a>
+			</li>
+		</ul>
+		<form method="post" action="search.php" class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	
+		<ul class="navbar-nav my-2 my-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="login.html">Login</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="signup.html">Sign Up</a>
+			</li>
+		</ul>
+	</nav>
+
+	<h1 style="steelblue">Place your request!</h1>
+	<form method="post" action="requests.php" >
+        Username <input type="text" name="usname" class="requestBook" ><br /><br />
+		Book name <input type="text" name="bname" class="requestBook" ><br /><br />
+		Author name <input type="text" name="aname" class="requestBook" ><br />
+		<p><pre></pre></p>
+		<input type="submit" value="Submit Request" class="actionButton">
+	</form>
+	
+</body>
+</html>

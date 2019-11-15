@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" type="images/x-icon" href="images/icon.png" />
+	<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="conf.css" rel="stylesheet">
+	<title>Login</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="mainPage.html"><img src="images/icon.png" style="height:30px;width:40px"> BookWiki</a>
+
+		<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="genre.html">Genre</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="request.html">Request</a>
+		</li>
+		</ul>
+		<form method="post" action="search.php" class="form-inline my-2 my-lg-0">
+		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+
+		<ul class="navbar-nav my-2 my-lg-0">
+			<li class="nav-item">
+			<a class="nav-link" href="signup.html">New User? Sign Up</a>
+			</li>
+		</ul>
+	</nav>
+
+	<h1 style="color:steelblue">Login</h1>
+    <form method="post" action="check.php" >
+        Username <input type="text" name="usname" class="un"><br /><br />
+		Password <input type="password" name="pass" class="pw"><br /><br />
+		<input type="submit" value="Login" class="actionButton">
+    </form>
+
+</body>
+</html>
+
+<!-- <html>
+<head>
+	<title>Login Form</title>	
+	<link rel="stylesheet" type="text/css" href="mainPage.css">
+	<style>
+		.un, .pw{
+			font-size: 16px;
+			padding: 12px 24px;
+			border: none;
+			cursor: text;
+			border-radius: 5px;}
+		.container img { width:1380; height:200;}
+	</style>
+</head>
+<body>
+	<a href="mainPage.html"><h1 class="Websitename">Bookwiki</h1></a>
+	<div class="container">
+		<img src="Books4.jpg" alt="Book image" id="bkgd">
+		<a href="Genre/genreMain.html"> <button class="Genre">Genre</button> </a>
+		<a href="Fantasy.php"> <button class="Biography">Biography</button> </a>
+		<a href="Genre/FictionGenre.html"> <button class="Fiction">Fiction</button> </a>
+		<a href="Genre/romanceGenre.html"> <button class="Romance">Romance</button> </a>
+		<a href="Genre/horrorGenre.html"> <button class="Horror">Horror</button> </a>
+		<a href="Genre/mysteryGenre.html"> <button class="Mystery">Mystery</button> </a>
+
+		<form method="post" action="search.php">
+			<input type="text" class="Searchbox" size="20" maxlength="100" placeholder="Search for a book" name="s" value="">
+			<input type="submit" class="Search" value="Search">
+		</form>
+
+		<a href="Signup.html"><button class="su">Sign up</button></a>
+		<a href="Login.html"><button class="li">Login</button></a>
+
+	</div>
+
+	<h1 style="color:steelblue">Login</h1>
+    <form method="post" action="check.php" >
+        Username <input type="text" name="usname" class="un"><br /><br />
+		Password <input type="password" name="pass" class="pw"><br /><br />
+		<input type="submit" value="GO"/ style="    background-color: slategray;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;">
+		<input type="reset" style="    background-color: slategray;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;"/>
+    </form>
+</body>
+</html> -->
